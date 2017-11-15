@@ -24,7 +24,7 @@ def main():
 
 
 
-    #print (li)
+    print (li)
     return li
 
 if __name__=='__main__':
