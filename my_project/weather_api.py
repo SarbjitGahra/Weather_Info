@@ -26,6 +26,19 @@ def main():
 
     print (li)
     return li
+def get_weather(city):
+    dic={}
+    api_key="&APPID=875ecd6cd3b9cbef96b941d8a0a0ed57"
+    url ="http://api.openweathermap.org/data/2.5/weather?q="
+    units="&units=imperial"
+    response = requests.get(url+city+ units+ api_key)
+    weather =response.json()
+    dic['city']=weather['name']
+    dic['temp']=weather['main']['temp']
+    dic['conditions'] = weather['weather'][0]['description']
+    return dic
+
+
 
 if __name__=='__main__':
     main()

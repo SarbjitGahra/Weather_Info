@@ -25,12 +25,20 @@ li p:hover {
 }
 div {
   text-align: center;
-  font: 20px;
+}
+input.input {
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 .button {
+
     background-color: #008CBA;
     color: black;
     border: 2px solid #008CBA;
+    width: 15em;
+    height: 3em;
 }
 
 .button:hover {
